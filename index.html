@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>bob sponge form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="icon-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M2 12s3.5-6.5 10-6.5S22 12 22 12s-3.5 6.5-10 6.5S2 12 2 12z"/>
+        <circle cx="12" cy="12" r="3.5"/>
+    </symbol>
+
+    <symbol id="icon-eye-off" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M17.94 17.94A10.94 10.94 0 0 1 12 19c-7 0-10-7-10-7a21.9 21.9 0 0 1 5.17-6.88"/>
+        <path d="M9.88 9.88A3.5 3.5 0 0 0 12 15a3.5 3.5 0 0 0 2.12-6.12"/>
+        <line x1="1" y1="1" x2="23" y2="23"/>
+    </symbol>
+</svg>
+
+
+<div class="content center" id="content">
+
+    <img src="src/bobno.png" class="bob"> </img>
+    <img src="src/eye.png" class="lefteye" id="lefteye"> </img>
+    <img src="src/eye.png" class="righteye" id="righteye"> </img>
+
+
+    <form class="f1" autocomplete="off" autocapitalize="off">
+        <button class="icon-eye" type="button">
+            <svg width="20" height="20">
+                <use xlink:href="#icon-eye"></use>
+            </svg>
+        </button>
+
+        <button class="icon-eye-off" type="button">
+            <svg width="20" height="20">
+                <use xlink:href="#icon-eye-off"></use>
+            </svg>
+        </button>
+        <br>
+        <input type="text" name="username" placeholder="Username" id="userInput">
+        <br>
+        <input type="password" name="password" placeholder="Password" id="passInput">
+
+        <br><br>
+        <input type="submit" id="sub" value="ورود">
+    </form>
+
+
+
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
